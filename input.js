@@ -22,7 +22,15 @@ const setupInput = function (conn) {
     if (key === 'd') {
       connection.write('Move: right');
     }
-
+    if (key === 'i') {
+      connection.write('Say: Hello world!');
+    }
+    if (key === 'j') {
+      connection.write('Say: Follow your dreams!');
+    }
+    if (key === 'l') {
+      connection.write('Say: I iz alive');
+    }
     
     // Escape out of game with Ctrl + C (close stdin connection)
     if (key === '\u0003') {
